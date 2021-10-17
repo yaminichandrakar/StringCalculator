@@ -7,29 +7,37 @@ import org.junit.jupiter.api.Test;
 import com.calculator.String_Calculator;
 
 class String_calculator_test {
+	 String_Calculator stringCalculator = new String_Calculator();
+     
 	
 	@Test
     void empty_string_return_0() {
-        String_Calculator stringCalculator = new String_Calculator();
         assertEquals(0, stringCalculator.add(""));
     }
 	
 	@Test
     void single_number() {
-        String_Calculator stringCalculator = new String_Calculator();
         assertEquals(1, stringCalculator.add("1"));
     }
 	
 	@Test
     void single_number_2() {
-        String_Calculator stringCalculator = new String_Calculator();
-        System.out.println(stringCalculator.add("2"));
-    }
+		assertEquals(2, stringCalculator.add("2"));
+           }
 	
 	@Test
     void add_two_number() {
-        String_Calculator stringCalculator = new String_Calculator();
-        System.out.println(stringCalculator.add("2,3"));  
+		assertEquals(5, stringCalculator.add("2,3"));  
+    }
+	
+	@Test
+    void add_three_number() {
+		assertEquals(15, stringCalculator.add("2,3,10"));  
+    }
+	
+	@Test
+    void add_many_number() {
+		assertEquals(40, stringCalculator.add("2,3,10,20,5,0"));  
     }
 	
 
