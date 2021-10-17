@@ -84,4 +84,10 @@ class String_calculator_test {
     void negativeno_test3() {
 		stringCalculator.add("-3,-5,-2,-10");  
     }
+	
+	@Test
+    void diff_delimiter() {
+		assertEquals(3, stringCalculator.add("//[x]\n2x1"));  
+	    
+    }
 }
