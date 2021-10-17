@@ -55,4 +55,18 @@ class String_calculator_test {
 		assertEquals(20, stringCalculator.add("2\n3\n5\n10"));  
     }
 
+	@Test
+    void numbergraterthan1k_test1() {
+		assertEquals(2, stringCalculator.add("2,1002"));  
+    }
+	
+	@Test
+    void numbergraterthan1k_test2() {
+		assertEquals(2, stringCalculator.add("2,1002\n1003"));  
+    }
+	
+	@Test
+    void numbergraterthan1k_test3() {
+		assertEquals(0, stringCalculator.add("1003,1002"));  
+    }
 }
