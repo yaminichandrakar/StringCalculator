@@ -69,4 +69,19 @@ class String_calculator_test {
     void numbergraterthan1k_test3() {
 		assertEquals(0, stringCalculator.add("1003,1002"));  
     }
+	
+	@Test
+    void negativeno_test1() {
+		stringCalculator.add("-3,2");  
+    }
+	
+	@Test
+    void negativeno_test2() {
+		stringCalculator.add("3,-2");  
+    }
+	
+	@Test
+    void negativeno_test3() {
+		stringCalculator.add("-3,-5,-2,-10");  
+    }
 }
