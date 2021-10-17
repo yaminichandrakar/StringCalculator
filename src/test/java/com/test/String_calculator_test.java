@@ -86,8 +86,14 @@ class String_calculator_test {
     }
 	
 	@Test
-    void diff_delimiter() {
+    void diff_delimiter_test1() {
 		assertEquals(3, stringCalculator.add("//[x]\n2x1"));  
+	    
+    }
+	
+	@Test
+    void diff_delimiter_test2() {
+		assertEquals(6, stringCalculator.add("//[x][y]\n1x2y3"));  
 	    
     }
 }
