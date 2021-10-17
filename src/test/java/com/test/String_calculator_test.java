@@ -96,4 +96,10 @@ class String_calculator_test {
 		assertEquals(6, stringCalculator.add("//[x][y]\n1x2y3"));  
 	    
     }
+	
+	@Test
+    void diff_delimiter_test3() {
+		assertEquals(6, stringCalculator.add("//[xx][yy]\n1xx2yy3"));  
+	    
+    }
 }
