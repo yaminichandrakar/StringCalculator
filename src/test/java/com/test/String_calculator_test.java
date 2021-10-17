@@ -20,5 +20,17 @@ class String_calculator_test {
         assertEquals(1, stringCalculator.add("1"));
     }
 	
+	@Test
+    void single_number_2() {
+        String_Calculator stringCalculator = new String_Calculator();
+        System.out.println(stringCalculator.add("2"));
+    }
+	
+	@Test
+    void add_two_number() {
+        String_Calculator stringCalculator = new String_Calculator();
+        System.out.println(stringCalculator.add("2,3"));  
+    }
+	
 
 }
