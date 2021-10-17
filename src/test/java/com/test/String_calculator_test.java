@@ -40,5 +40,19 @@ class String_calculator_test {
 		assertEquals(40, stringCalculator.add("2,3,10,20,5,0"));  
     }
 	
+	@Test
+    void using_newline_and_comma() {
+		assertEquals(10, stringCalculator.add("2\n3,5"));  
+    }
+	
+	@Test
+    void using_comma_and_newline() {
+		assertEquals(10, stringCalculator.add("2,3\n5"));  
+    }
+	
+	@Test
+    void using_newlineonly() {
+		assertEquals(20, stringCalculator.add("2\n3\n5\n10"));  
+    }
 
 }
